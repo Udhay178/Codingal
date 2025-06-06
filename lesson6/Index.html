@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms in html</title>
+</head>
+
+<body>
+    <h1>Hyatt Regency Application form</h1>
+    <form>
+        <label for="firstname">First Name</label>
+        <input type="text" name="firstname">
+
+        <label for="lastname">Last Name</label>
+        <input type="text" name="lastname">
+
+        <label for="age">Age</label>
+        <input type="number" name="age">
+        
+        <label for="gender">Gender</label>
+        <input type="radio" name="gender" value="male">Male
+        <input type="radio" name="gender" value="female">Female
+
+        <label for="food">Food</label>
+        <input type="checkbox" name="food" value="breakfast">Breakfast
+        <input type="checkbox" name="food" value="lunch">Lunch
+        <input type="checkbox" name="food" value="dinner">Dinner
+
+        <label for="roomtype">Room Type</label>
+        <select name="roomtype">
+        <option value="Standard">Standard Room</option>
+        <option value="Queen">Queen Room</option>
+        <option value="King">King Room</option>
+        <option value="Master">Master Room</option>
+       
+        <label for="dateandtime">Date and Time</label>
+        <input type="datetime-local" name="dateandtime">
+
+        <input type="submit">
+    </form>
+</body>
+
+</html>
