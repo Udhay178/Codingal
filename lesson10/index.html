@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced selectors, Pseudo classes and Pseudo elements</title>
+<style>
+    .input[type="text"]{
+background-color: cornflowerblue;
+    }
+    .class1 > p{
+        background-color: blue;
+        width:fit-content;
+    }
+    .h2 + h3{
+        font-family: fantasy;
+    }
+.class2:hover{
+
+background-color: aqua;
+
+}
+
+li:nth-child(2){
+
+background-color: aqua;
+width: fit-content;
+}
+
+span:not(.class4){
+
+border: 3px solid red;
+
+}
+
+.class3::before{
+
+content: '😎'
+
+}
+
+.class3::after{
+
+content: '😎';
+
+}
+
+.class4::first-letter{
+
+font-size: 28px;
+
+}
+</style>
+</head>
+<body>
+    <input type="text">
+    <input type="number" style="background-color: red;">
+    <div class="class1">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt.</p>
+    <p>Lorem ipsum dolor sit amet consectetur.</p>
+    </div>
+    <h2>Lorem, ipsum dolor.</h2>
+    <h3>Lorem, ipsum.</h3>
+    <p>Lorem ipsum dolor sit amet consectetur<span class="class2">Lorem.</span> adipisicing.</p>
+<ul>
+    <li>endwef</li>
+    <li>nfjf</li>
+    <li>duufnf</li>
+</ul>
+<span class="class3">Lorem ipsum dolor sit.</span>
+<span class="class4">Lorem, ipsum dolor.</span>
+</body>
+</html>
