@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Advanced Selectors Demo</title>
+  <style>
+    /* Advanced Selectors */
+    input[type="text"] {
+      border: 2px solid blue;
+    }
+
+    h1 + p {
+      color: green;
+    }
+
+    h1 ~ p {
+      font-style: italic;
+    }
+
+    ul > li {
+      list-style: square;
+    }
+
+    div span {
+      color: red;
+    }
+
+    h1, h2, .title {
+      font-family: Arial, sans-serif;
+    }
+
+    /* Pseudo-Classes */
+    button:hover {
+      background-color: lightblue;
+    }
+
+    input:focus {
+      outline: 2px solid purple;
+    }
+
+    a:active {
+      color: red;
+    }
+
+    li:nth-child(2) {
+      color: orange;
+    }
+
+    li:first-child {
+      font-weight: bold;
+    }
+
+    li:last-child {
+      text-decoration: underline;
+    }
+
+    p:not(.intro) {
+      color: gray;
+    }
+
+    input:checked + label {
+      color: green;
+    }
+
+    button:disabled {
+      background-color: #ccc;
+      color: #666;
+    }
+
+    /* Pseudo-Elements */
+    h2::before {
+      content: "🔥 ";
+    }
+
+    h2::after {
+      content: " 🎉";
+    }
+
+    p::first-line {
+      font-weight: bold;
+    }
+
+    p::first-letter {
+      font-size: 2rem;
+      color: red;
+    }
+
+    ::selection {
+      background-color: yellow;
+      color: black;
+    }
+
+    body {
+      font-family: sans-serif;
+      margin: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Main Heading</h1>
+  <p class="intro">This paragraph follows h1 directly.</p>
+  <p>This is another paragraph after h1.</p>
+
+  <h2>Section Title</h2>
+  <p>This is a paragraph demonstrating pseudo-elements and pseudo-classes.</p>
+
+  <div>
+    <span>This span is inside a div (descendant selector).</span>
+  </div>
+
+  <ul>
+    <li>First item</li>
+    <li>Second item</li>
+    <li>Third item</li>
+  </ul>
+
+  <form>
+    <input type="text" placeholder="Text input"><br><br>
+
+    <input type="checkbox" id="check">
+    <label for="check">Check me!</label><br><br>
+
+    <input type="radio" name="r" checked>
+    <label>Option 1</label><br>
+
+    <input type="radio" name="r">
+    <label>Option 2</label><br><br>
+
+    <input type="text" placeholder="Focus me"><br><br>
+
+    <button>Hover Me</button>
+    <button disabled>Disabled</button>
+  </form>
+
+  <a href="#">Click Me (Active)</a>
+
+</body>
+</html>
