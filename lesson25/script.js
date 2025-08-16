@@ -1,4 +1,4 @@
-// normal var has its reference before its existence so it has existence before its birth
+// normal var is hoisted has its reference before its existence so it has existence before its birth
 var a = 111
 var b = 'El Silbon'
 var c = true
@@ -21,7 +21,7 @@ console.log(typeof(h))
 console.log(typeof(i))
 console.log(typeof(j))
 
-// let and const are hoisted so it will show an reference error and u cannot access it before its existence
+// let and const are not hoisted so it will show an reference error and u cannot access it before its existence
 
 
 // u can put another value to let var even after putting an value
