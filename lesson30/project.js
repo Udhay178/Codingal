@@ -1,9 +1,9 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const form = document.getElementById('loginForm');
-    const errorMsg = document.getElementById('errorMsg');
+    var form = document.getElementById('loginForm');
+    var errorMsg = document.getElementById('errorMsg');
 
     form.addEventListener('submit', function (event) {
-        const age = parseInt(document.getElementById('age').value, 10);
+        var age = parseInt(document.getElementById('age').value, 10);
 
         if (age < 18) {
             event.preventDefault();
