@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validation in JS</title>
+</head>
+
+<body>
+    <h1>Ottustsuki Moon Rocks + Grocery Store</h1>
+    <form name="OttustsukiMoonStore" onsubmit="validatetheindra()">
+        <label for="fullname">Full Name</label>
+        <input id="fullname" type="text" name="fullname" required>
+
+        <label for="address">Address</label>
+        <input id="address" type="text" name="address" required>
+
+        <label for="phonenumber">Phone Number</label>
+        <input id="phonenumber" type="number" name="phonenumber" maxlength="13" required>
+
+        <input type="submit">
+    </form>
+    <script src="script.js"></script>
+</body>
+
+</html>

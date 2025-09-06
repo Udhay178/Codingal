@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form for 18+</title>
+    
+</head>
+
+<body>
+
+    <h2>Login Form for 18+</h2>
+    <form id="loginForm">
+        <label for="username">Username</label>
+        <input type="text" id="username" name="username" required>
+
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" required>
+
+        <label for="age">Age</label>
+        <input type="number" id="age" name="age" min="1" required>
+
+        <button type="submit">Login</button>
+        <div class="error" id="errorMsg"></div>
+    </form>
+
+    <script src="project.js"></script>
+</body>
+
+</html>
