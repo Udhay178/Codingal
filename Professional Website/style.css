@@ -1,8 +1,16 @@
-header a{
+header a {
     color: inherit;
     text-decoration: none;
 }
 
-header ul{
+header ul {
     list-style-type: none;
+}
+
+.main-image {
+    width: 44%;
+}
+
+.card img {
+    width: 220px;
 }
