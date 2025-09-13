@@ -11,8 +11,8 @@ header ul {
     width: 44%;
 }
 
-.card-img {
-    width: 220px;
+.card img {
+    height: 220px;
 }
 
 .card {
