@@ -1,0 +1,33 @@
+.calculator {
+    background-color: white;
+    width: 440px;
+    padding: 8px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    border-radius: 8px;
+}
+
+.display {
+    height: 90px;
+    padding: 8px;
+    font-size: 38px;
+    font-weight: 600;
+    text-align: right;
+    border-radius: 8px;
+}
+
+.keyboard {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.number, .operator {
+    width: 80px;
+}
+
+.operator {
+    background-color: gainsboro;
+}
